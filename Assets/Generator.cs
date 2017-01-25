@@ -154,7 +154,7 @@ public class Generator : MonoBehaviour {
 
     public void UnlockGenerator()
     {
-        if (!_isUnlocked && _totalAmount >= _unlockAmount && _unlockMiscCondition)
+        if (!_isUnlocked && _totalAmount >= _unlockAmount && _unlockMiscCondition)//the misc condition is the from the PLayInfo Script
         {
             unlockButton.interactable = true;
             unlockText.text = "Tap to Unlock\nCost: " + _unlockAmount + " Points";
